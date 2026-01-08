@@ -26,9 +26,9 @@ int jeong4 = 100;
 int jeong5 = 97;
 
 
-decimal sophiaAvg = ((sophia1 + sophia2 + sophia3 + sophia4 + sophia5) / currentAssignments * 1m);
-decimal nicolasAvg = ((nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5) / currentAssignments * 1m);
-decimal zahirahAvg = ((zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5) / currentAssignments * 1m); 
-decimal jeongAvg = ((jeong1 + jeong2 + jeong3 + jeong4 + jeong5) / currentAssignments * 1m);
+decimal sophiaAvg = ((sophia1 + sophia2 + sophia3 + sophia4 + sophia5) / (decimal)currentAssignments);
+decimal zahirahAvg = ((zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5) / (decimal)currentAssignments); 
+decimal nicolasAvg = ((nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5) / (decimal)currentAssignments);
+decimal jeongAvg = ((jeong1 + jeong2 + jeong3 + jeong4 + jeong5) / (decimal)currentAssignments);
 
 Console.WriteLine($"Student\tGrade\nSophia\t{sophiaAvg} A\nNicolas\t{nicolasAvg} B\nZahirah\t{zahirahAvg} B\nJeong\t{jeongAvg} A");
